@@ -1,0 +1,105 @@
+<html>
+	
+<!-- Mirrored from widgets.wp.com/timeline/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2016 13:54:33 GMT -->
+<head>
+		<script type="text/html" id="timeline">
+
+			<div class="wordpress-embed-widget <%= options %> <% if ( description ) { %> tagline-on <% } %>">
+				<header class="widget-header">
+					<h1 class="blog-title"><a href="<%= blogURL%>" target="_parent"><%- blogTitle %></a></h1>
+					<h2 class="blog-description"><%- description %></h2>
+					<a href="#" class="<%= followingClass %>" id="follow-button"><%= followingStatus %></a>
+				</header>
+			
+			<% if ( hasPosts ) { %>
+				<div class="posts">
+				<ol>
+				<% _.each( posts, function( post ) { %>
+						<li class="post" data-post-id='<%= post.ID %>'>
+						<a href="<%= post.author.profile_URL %>" target="_parent">
+						<img class="post-gravatar" src="<%= post.author.avatar_URL %>" alt="" width="80" height="80" />
+						</a>
+						<div class="post-date"><%= dates[post.ID] %></div>
+						<h3 class="post-title"><a href="<%= post.URL %>" target="_parent"><%= post.title %></a></h3>
+						<div class="post-content"><% if ( post.excerpt && _.size( post.excerpt ) > 150 ) { %> <%= post.excerpt %> <% } else { %> <%= post.content %> <% } %></div>
+						<%= intents[post.ID] %>
+						</li>
+				<% }); %>
+				</ol>
+				</div>
+			<% } else { %>
+				<%= noPostsMessage %>
+			<% } %>
+				
+			<footer class="widget-footer">Powered by <a href="#">WordPress.com</a></footer>
+			</div>
+		
+		</script>
+	</head>
+	<script type='text/javascript'>
+	//<![CDATA[
+
+		// Bootstrap jQuery
+		var jqjs = document.createElement('script');
+		jqjs.src = '../../s0.wp.com/wp-includes/js/jquery/jquery.js';
+		jqjs.type = 'text/javascript';
+		document.getElementsByTagName('head')[0].appendChild( jqjs );
+
+		function loadScripts() {
+			if ( ! window.jQuery ) {
+				// jQuery hasn't loaded yet. Try again in 50ms.
+				 window.setTimeout( loadScripts, 50 );
+				 return;
+			}
+
+			var scripts = [
+					'//s0.wp.com/wp-content/js/postmessage.js',
+					'../../s0.wp.com/wp-content/js/jed/jed.js',
+					'../../s0.wp.com/wp-includes/js/underscore.min.js'
+			];
+
+			var head = document.getElementsByTagName('head')[0];
+			for ( i = 0; i < scripts.length; i++ ) {
+				var script = document.createElement('script');
+				script.src = scripts[i];
+				script.type = 'text/javascript';
+				head.appendChild( script );
+			}
+
+			loadProxyScript();
+		}
+		loadScripts();
+
+		function loadProxyScript() {
+			if ( ! window.pm || ! window.Jed || ! window._ ) {
+				// libs haven't loaded yet. Try again in 50ms.
+				 window.setTimeout( loadProxyScript, 50 );
+				 return;
+			}
+
+			var script = document.createElement('script');
+			script.src = '../../s0.wp.com/wp-content/js/jquery/jquery.wpcom-proxy-request0063.js?ver=20140528';
+			script.type = 'text/javascript';
+			document.getElementsByTagName('head')[0].appendChild( script );
+
+			loadTimelineScript();
+		}
+
+		function loadTimelineScript() {
+			if ( ! jQuery.wpcom_proxy_request ) {
+				// proxy hasn't loaded yet. Try again in 50ms.
+				 window.setTimeout( loadTimelineScript, 50 );
+				 return;
+			}
+
+			var script = document.createElement('script');
+			script.src = 'script.js'
+			script.type = 'text/javascript';
+			document.getElementsByTagName('head')[0].appendChild( script );
+		}
+	//]]>
+	</script>
+	<body><div id="target"></div></body>
+
+<!-- Mirrored from widgets.wp.com/timeline/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2016 13:54:36 GMT -->
+</html>
