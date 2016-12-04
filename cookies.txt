@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.google.com	TRUE	/	FALSE	1999999999	NID	91=0I-DFPzvV0cWYFQK4x69SxJxRFpWVu0LhOB7b-sqDjtUo3-u0mIg7tfq6p2LnZEbUBtqsLHBt57iR7M3FMxVYAlBAiTmGC2k9RQz8fPJY4LSJdTi_BL9cYky7BfVhW9x
-.skimresources.com	TRUE	/	FALSE	1999999999	skimGUID	0e1ac594d5ab09df23234674762c0f76
-.skimresources.com	TRUE	/	FALSE	1999999999	skimSESS	770b6465afad089826e24b40459add39
-
