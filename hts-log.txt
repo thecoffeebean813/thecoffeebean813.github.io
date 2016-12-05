@@ -1,14 +1,14 @@
-HTTrack3.48-22+htsswf+htsjava launched on Sun, 04 Dec 2016 15:12:28 at http://thecoffeebean813.com/wordpress1/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://thecoffeebean813.com/wordpress1/ -O1 "C:\Users\THE OWNER\Desktop\The Coffee Bean 813 Website" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.48-22+htsswf+htsjava launched on Sun, 04 Dec 2016 19:45:37 at http://thecoffeebean813.com/wordpress1/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://thecoffeebean813.com/wordpress1/ -O1 "C:\Users\THE OWNER\Desktop\tcb813-2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-15:14:09	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from s.gravatar.com/js/gprofiles.js?ver=2016Decaa)
-15:14:09	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/g.gif (from stats.wp.com/e-201648.js)
-15:14:09	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/c.gif (from stats.wp.com/e-201648.js)
+19:47:14	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from s.gravatar.com/js/gprofiles.js?ver=2016Decaa)
+19:47:14	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/g.gif (from stats.wp.com/e-201649.js)
+19:47:15	Error: 	"Not Found" (404) at link thecoffeebean813.com/wordpress1/c.gif (from stats.wp.com/e-201649.js)
 
-HTTrack Website Copier/3.48-22 mirror complete in 6 minutes 12 seconds : 390 links scanned, 386 files written (12491785 bytes overall) [12722872 bytes received at 34201 bytes/sec], 24455 bytes transferred using HTTP compression in 2 files, ratio 33%, 2.3 requests per connection
+HTTrack Website Copier/3.48-22 mirror complete in 6 minutes 26 seconds : 390 links scanned, 386 files written (12341949 bytes overall) [12566375 bytes received at 32555 bytes/sec], 34980 bytes transferred using HTTP compression in 3 files, ratio 32%, 2.2 requests per connection
 (3 errors, 0 warnings, 0 messages)
