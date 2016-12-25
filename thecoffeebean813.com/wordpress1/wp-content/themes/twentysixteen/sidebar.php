@@ -8,9 +8,8 @@
 		<div class="sidebar-content">
 
 			<?php if ( hu_is_checked('sidebar-top') ): ?>
-  			<div class="sidebar-top group">
-          <p><?php echo hu_has_social_links() ? __('Follow:','hueman') : '&nbsp;' ; ?></p>
-          <?php hu_print_social_links() ; ?>
+  			<div class="sidebar-top group"                                
+        >
   			</div>
 			<?php endif; ?>
 

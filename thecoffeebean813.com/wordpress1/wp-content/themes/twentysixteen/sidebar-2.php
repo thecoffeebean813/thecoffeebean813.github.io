@@ -6,7 +6,7 @@
 
 		<?php if ( hu_is_checked('sidebar-top') ): ?>
   		<div class="sidebar-top group">
-  			<p><?php _e('More','hueman'); ?></p>
+  			
   		</div>
 		<?php endif; ?>
 

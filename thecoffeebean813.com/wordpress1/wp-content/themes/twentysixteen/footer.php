@@ -91,16 +91,16 @@
         <div class="pad group">
 
           <div class="grid one-half">
-            <?php $_footer_logo_img_src = apply_filters; ?>
+            <?php $_footer_logo_img_src = apply_filters( 'hu_footer_logo_src', hu_get_img_src_from_option('footer-logo') ); ?>
             <?php if ( false !== $_footer_logo_img_src && ! empty($_footer_logo_img_src) ) : ?>
-              <img id="footer-logo" src="<?php get_bloginfo('name'); ?>" alt="<?php get_bloginfo('name'); ?>">
+              <img id="footer-logo" src="<?php get_bloginfo('name'); ?>">
             <?php endif; ?>
 
             <div id="copyright">
               <?php if ( hu_get_option( 'copyright' ) ) : ?>
                 <p><?php echo wp_kses_post( hu_get_option( 'copyright' ) ); ?></p>
               <?php else: ?>
-                <p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php _e( 'All Rights Reserved.', '' ); ?></p>
+                <p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php _e( 'All Rights Reserved.', 'hueman' ); ?></p>
               <?php endif; ?>
             </div><!--/#copyright-->
 
@@ -112,22 +112,9 @@
 
           </div>
 
-          <div class="grid one-half last">                                  
-            <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-            <script async defer data-pin-hover="true" data-pin-tall="true" data-pin-round="true" data-pin-save="false" src="//assets.pinterest.com/js/pinit.js"></script>
-
-          <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>          
-                       
-
+          <div class="grid one-half last">
+            
           </div>
->          
 
         </div><!--/.pad-->
 
